@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 09/01/2020 15:45:37 by Eclipse SUMO netedit Version UNKNOWN
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\Users\dalug\Desktop\Custom%20Network\custom.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\dalug\Desktop\Custom%20Network\custom.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-internal-links value="false"/>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <route-files value="C:\Users\dalug\Desktop\Custom%20Network\routes.rou.xml"/>
+    </netedit>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <route edges="LC CR" color="yellow" id="route_0"/>
+    <route edges="RC CL" color="yellow" id="route_1"/>
+    <route edges="CL" color="yellow" id="route_CL"/>
+    <flow id="routeFlow_0" begin="0.00" route="route_0" end="3600.00" probability="0.06"/>
+    <flow id="routeFlow_1" begin="0.00" route="route_1" end="3600.00" probability="0.04"/>
+    <flow id="routeFlow_CL" begin="0.00" route="route_CL" end="3600.00" probability="0.06"/>
+    <vType id="PedCar" length="1.00" minGap="1.00" maxSpeed="10.00" vClass="motorcycle" color="255,0,228" accel="1" decel="1"/>
+</routes>
